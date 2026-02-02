@@ -1,0 +1,48 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.env
+.venv
+venv/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Dataset (DO NOT PUSH)
+# =========================
+DATA/data/train/
+DATA/data/val/
+DATA/data/test/
+DATA/data/processed/
+
+# Numpy / ML binaries
+*.npy
+*.npz
+*.h5
+*.pt
+*.pth
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDEs / Editors
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Logs & temp
+# =========================
+*.log
