@@ -1,14 +1,19 @@
 # =========================
-# Python
+# Python cache & builds
 # =========================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.egg-info/
+
+# =========================
+# Virtual Environments
+# =========================
 .env
-.venv
+.venv/
 venv/
+tf_env/
 
 # =========================
 # Jupyter
@@ -16,19 +21,35 @@ venv/
 .ipynb_checkpoints/
 
 # =========================
-# Dataset (DO NOT PUSH)
+# DATASETS (DO NOT PUSH)
 # =========================
-DATA/data/train/
-DATA/data/val/
-DATA/data/test/
-DATA/data/processed/
+DATA/archive/Driver Drowsiness Dataset (DDD)/
+DATA_PREPROCESSED/
+DATA_SPLIT/
 
-# Numpy / ML binaries
-*.npy
-*.npz
+# =========================
+# Model files & checkpoints
+# =========================
 *.h5
+*.keras
 *.pt
 *.pth
+*.ckpt
+models/
+checkpoints/
+
+# =========================
+# NumPy binaries (only data)
+# =========================
+*.npy
+*.npz
+
+# =========================
+# Logs & temp
+# =========================
+*.log
+logs/
+tensorboard/
 
 # =========================
 # OS files
@@ -41,8 +62,3 @@ Thumbs.db
 # =========================
 .vscode/
 .idea/
-
-# =========================
-# Logs & temp
-# =========================
-*.log
